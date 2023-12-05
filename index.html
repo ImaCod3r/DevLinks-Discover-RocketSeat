@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Titulo da pagina-->
+  <title>Discover</title>
+  <!--Importando a fonte 'inter' do fonts.google.com-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!--Referenciado o documente CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<!--Corpo da pagina-->
+<body>
+  <!--Caixa dentro do corpo que abrigara todos elementos do projeto-->
+  <div id="container">
+    <!--Caixa dentro do container que abrigara todos elementos do perfil(foto e nome)-->
+    <div id="profile">
+      <!--Foto de perfil-->
+      <img src="assets/avatar.png" alt="foto de mayk brito sorrindo, usando oculos e camisa preta, barba e fundo amarelo.">
+      <!--Nome-->
+      <p>@maykbrito</p>
+    </div>
+    <!--Switch(Mudar de temas)-->
+    <div id="switch">
+      <button onclick="toggleMode()"></button>
+      <span></span>
+    </div>
+    <!--Links-->
+    <div id="links">
+      <!--Lista desordenada-->
+      <ul>
+        <!--List items ou itens da lista contendo ancoras(a)-->
+        <li><a href="#">Inscreva-se no NLW</a></li>
+        <li><a href="#">Baixe meu e-book</a></li>
+        <li><a href="#">Veja meu portfólio</a></li>
+        <li><a href="https://app.rocketseat.com.br/explorer" target="_blank">Conheça o Explorer</a></li>  
+      </ul>
+    </div>
+    <!--Links para redes sociais-->
+    <div id="social-links">
+      <a href="https://github.com/TheRealEdsonRodrigues" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a href="https://www.instagram.com/thaweb.guy" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100078044704678" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/edson-rodrigues-b35738267/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </div>
+
+    <!--Rodape-->
+    <footer>
+        Feito com <ion-icon name="heart"></ion-icon> por <a href="#">Edson Rodrigues</a>
+    </footer>
+  </div>
+
+  <!--Importando os icones(https://ionic.io)-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+  <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!--Importando o Javascript-->
+  <script src="script.js"></script>
+</body>
+</html>
