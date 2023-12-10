@@ -25,6 +25,7 @@
 body{
   /*Definindo o fundo da pagina*/
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   /* O '*' e um selector universal, que aplica uma propriedade a todos elementos filhos*/ 
@@ -33,7 +34,8 @@ body * {
 }
 /*Caixa principal*/
 #container{
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   margin: 56px auto 0px;
 }
 /*Perfil*/
@@ -66,10 +68,10 @@ body * {
   top:50%;
   transform: translateY(-50%);
   z-index: 1;
+  animation: slide-back 0.2s;
 }
 .light #switch button{
-  right: 0;
-  left: initial;
+  animation: slide-in 0.2s forwards;
 }
 #switch span{
   display: block;
@@ -130,4 +132,31 @@ footer{
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+/* Media Queries */
+@media (min-width: 700px){
+  :root {
+    --bg-url: url('./assets/bg-desktop.jpg');
+  }
+
+  .light{
+    --bg-url: url('./assets/bg-desktop-light.jpg');
+  }
+}
+/* Animacoes */
+@keyframes slide-in{
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+@keyframes slide-back{
+  from{
+    left: 50%
+  }
+  to{
+    left: 0;
+  }
 }
